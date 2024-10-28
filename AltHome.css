@@ -1,0 +1,708 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+.logo {
+   /* Adjust the height as needed */
+  margin-right: 10px; /* Space between logo and tagline */
+}
+
+
+main {
+    padding: 20px;
+}
+
+/* background of card */
+.calendar, .featured-event, .gallery {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: #fff; */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-details {
+    margin: 20px 0;
+}
+
+.cta-buttons {
+    margin-top: 10px;
+}
+
+.cta-buttons button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-buttons button:hover {
+    background-color: #218838;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-images figure {
+    margin: 10px;
+    flex: 1 1 calc(33% - 20px);
+}
+
+.gallery-images img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.testimonials {
+    margin-top: 20px;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+
+/* actual calendar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  
+  .container {
+    border: 1px solid white;
+    position: relative;
+    width: 380px;
+    font-family: "Baskervville SC", serif;
+    opacity: 0.8;
+    min-height: 400px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(157, 157, 157));
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.description {
+    padding: 15px;
+    text-align: center;
+}
+
+.description h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.description p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+.logo {
+    height: 80px; /* Adjust the height as needed */
+    margin-right: 20px; /* Space between logo and tagline */
+}
+
+header {
+    margin-bottom: 20px; /* Space between header and form */
+    text-align: center; /* Center the header text */
+    background-color: rgb(0, 62, 0);
+}
+
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* mobile stuff */
+
+@media only screen and (max-width: 768px) {
+    .container {
+      
+        position: relative;
+        width: 300px;
+        min-height: 300px;
+        background: #028e17;
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(25px);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      
+    #dycalendar {
+        width: 50%;
+        padding: 20px;
+      }
+      
+      #dycalendar table {
+        width: 50%;
+        margin-top: 10px;
+        margin-right: 40px;
+        margin-left: -60px;
+        border-spacing: 8px;
+      }
+      
+      #dycalendar table tr:nth-child(1) td {
+        background: #fff;
+        color: #111;
+        border-radius: 4px;
+        font-weight: 60;
+      }
+      
+      #dycalendar table td {
+        color: #fff;
+        padding: 1px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      #dycalendar table td:hover {
+        background: #fff;
+        color: #111 !important;
+      }
+      
+      .dycalendar-month-container .dycalendar-today-date,
+      .dycalendar-target-date {
+        background: #fff !important;
+        color: #111 !important;
+        border-radius: 8px;
+      }
+      
+      .dycalendar-month-container
+        .dycalendar-header
+        .dycalendar-prev-next-btn.prev-btn {
+        background: #fff;
+        color: #111;
+        width: 24px;
+        height: 38px;
+        left: 4px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+      
+      .dycalendar-month-container
+        .dycalendar-header
+        .dycalendar-prev-next-btn.next-btn {
+            transform: translateX(40px);
+        background: #fff;
+        color: #111;
+        width: 24px;
+        height: 38px;
+        right: 4px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+
+      .dycalendar-month-container
+        .dycalendar-header
+        .dycalendar-prev-next-btn.prev-btn {
+        transform: translateX(-40px);
+        background: #fff;
+        color: #111;
+        width: 24px;
+        height: 38px;
+        right: 4px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+      
+      .dycalendar-month-container
+        .dycalendar-today-btn {
+          margin-top: 10px
+      }
+      
+      .dycalendar-month-container
+        .dycalendar-today-btn 
+        .today-btn {
+        background: #fff;
+        color: #111;
+        display: inline-block;
+        width: 70%;
+        border-radius: 4px;
+        justify-content: center;
+        font-size: 20px;
+        padding: 5px;
+      } 
+}
+
+
+
+
+/* checking */
+
+
+
+
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5em;
+}
+
+.logo {
+  height: 80px; /* Adjust the height as needed */
+  margin-right: 20px; /* Space between logo and tagline */
+}
+
+/* all nav stuff */
+
+#navigation{
+  background-color: #008704;
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 11%;
+}
+
+nav ul li {
+  
+  font-family: "Ubuntu", sans-serif;
+  margin: 3%;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* //dropdown for services menu */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 62, 0);
+  padding: 10px 20px;
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.navbar .logo {
+  color: rgb(216, 57, 57);
+  font-size: 24px;
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Desktop styles */
+.nav-links {
+  
+  display: flex; /* Display links horizontally */
+  gap: 20px; /* Space between links */
+  z-index: 5;
+}
+
+/* Mobile nav stuff */
+@media only screen and (max-width: 768px) {
+  .nav-links {       
+      display: none; /* Hide the links by default */
+      flex-direction: column;
+      position: fixed; /* Position fixed to slide in */
+      top: 0;
+      right: -250px; /* Start off-screen */
+      background-color: #0a7600;
+      height: 100%; /* Full height */
+      width: 230px; /* Set a width for the menu */
+      padding-top: 8px; /* Space for logo */
+      transition: right 2.9s ease; /* Smooth transition */
+      transition: right 2.9s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-links.active {
+      
+      margin-top: 6.8%;
+      border: 2px solid white;
+      font-family: "Ubuntu", sans-serif;
+      opacity: 0.9;
+      background-color: #0a7600;
+      display: flex; /* Show links when active */
+      right: 0; /* Slide in from the right */
+  }
+
+  .nav-links li {
+  
+      margin-top: 2.8%;
+      background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(254, 255, 176));
+      border: 2px solid white;
+      padding: 10px 10px; /* Space between links */
+  }
+
+  .close-icon {
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      padding: 20px;
+      position: absolute; /* Position it in the top right corner */
+      right: 0;
+  }
+
+  .menu-icon {
+      display: block; /* Show the menu icon on mobile */
+      margin-left: 95%;
+  }
+
+  .close-icon {
+      display: block; /* Show the close icon only on mobile */
+  }
+
+  .logo {
+    height: 60px; /* Adjust the height as needed */
+    margin-right: 20px; /* Space between logo and tagline */
+}
+}
+
+/* Hide the close icon on desktop */
+@media only screen and (min-width: 769px) {
+  .close-icon {
+      display: none; 
+  }
+  }
+
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* event cards with that green fancy background */
+.event-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+}
+/* end event cards with that green fancy background */
+
+.footer-links a,
+.social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+#newsletter-signup {
+  margin-top: 20px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 1275px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* .active, .dot:hover {
+  background-color: #717171;
+} */
+
+
+
+/* body {
+  font-family: Arial, sans-serif;
+} */
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none; /* Hide slides by default */
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Optional: Fade effect for slides */
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+h2 {
+  text-align: center;
+}
+
+.events-gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+  justify-content: space-between; /* Distributes space between items */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none; /* Hide slides by default */
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+#bottomslide{
+    background: linear-gradient(rgb(0, 62, 0), rgb(255, 111, 0))
+}
+
+#souljets-card{
+  background-image: url("") ;
+  color: #e9ecef;
+}
+
+.box{
+  background-image: url("Homepage.png") ;
+}
