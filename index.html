@@ -17,9 +17,6 @@
         <div class="menu-icon" id="menu-icon">&#9776;</div>
         <ul class="nav-links" id="nav-links">
          
-           
-            <li><a href="SouljasAtl.html">Home</a></li>
-            <li><a href="AboutUs.html">About</a></li>
             <li><a href=""><div class="dropdown">
                 <button class="dropbtn">Our Services</button>
                 <div class="dropdown-content">
@@ -32,13 +29,18 @@
 
                 </div>
               </div></a></li>
-            <li><a href="contact.html">Contact</a></li>      
-            <img class="logo" src="1696429669357.jpeg" alt="">     
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <img class="logo" src="1696429669357.jpeg" alt=""> 
+            <li style="border: none;"><a href=""></a></li> 
+            <li style="border: none;"><a href=""></a></li>      
+              
         </ul>
     </nav>
    
-    <header>
-        <h1>Arborserv.com</h1>
+    <header> 
+        <h1>Arbor<span id="headline">serv</span></h1>
     </header>
 
     <section class="featured-event" id="bottomslide">
@@ -49,15 +51,18 @@
         <div class="slideshow-container">
             <div class="mySlides fade" style="display: block;">
                 <img src="photo_2024-10-27 20.05.09.jpeg" alt="Slide 1">
-                <div class="text-overlay">Upcoming Events</div>
+                <div class="text-overlay">At Arborserv, we offer expert tree cutting and maintenance services to enhance
+                     your property’s beauty and safety.
+                     Our skilled team efficiently handles tree removal, trimming, and land clearing with
+                      a commitment to quality and customer satisfaction. Trust us to keep your trees healthy and your space safe!</div>
             </div>
             <div class="mySlides fade" style="display: none;">
                 <img src="photo_2024-10-27 20.05.09.jpeg" alt="Slide 2">
-                <div class="text-overlay">Upcoming Events</div>
+                <div class="text-overlay">At Arborserv, we offer expert tree pruning services to promote healthy growth and enhance your landscape. Our skilled team carefully trims and shapes trees, removing dead or overgrown branches for improved safety and beauty. Trust us to keep your trees thriving!</div>
             </div>
             <div class="mySlides fade" style="display: none;">
                 <img src="photo_2024-10-27 20.05.06.jpeg" alt="Slide 3">
-                <div class="text-overlay">Upcoming Events</div>
+                <div class="text-overlay">At Arborserv, we specialize in crane work for safe and efficient tree removal. Our experienced team uses advanced equipment to tackle challenging jobs, ensuring minimal disruption to your property. Trust us to handle your tree removal needs with precision and care!</div>
             </div>
     
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -78,7 +83,7 @@
                 <div class="box">
                   <div class="container">
                     
-                    <h2>Tree Clean up company best in Georgia <a href="">Contact Us</a></h2> 
+                    <h2>Best tree clean up company in Georgia <a href="">Contact Us</a></h2> 
                     
                    
                   </div>
@@ -100,7 +105,52 @@
         </section>
 
 
-       
+        <h2>Modal Example</h2>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <label for="service">Choose a service:</label>
+
+<select name="Choose a Service" id="service">
+  <option value="treeCutting">Tree Cutting</option>
+  <option value="treePruning">Tree pruning </option>
+  <option value="craneWorkRemoval">Crane work removal.</option>
+  <option value="landClearing">Land clearing </option>
+  <option value="debrisRecycling">Debris Recycling</option>
+  <option value="firewood">Firewood</option>
+</select>
+<br>
+<label for="date">Choose a date:</label>
+
+<select name="Choose a Service" id="service">
+  <option value="treeCutting">Jan</option>
+  <option value="treePruning">Feb</option>
+  <option value="craneWorkRemoval">March</option>
+  <option value="landClearing">Apr</option>
+  <option value="debrisRecycling">May</option>
+  <option value="firewood">Jun</option>
+</select>
+
+<select name="Choose a Service" id="service">
+    <option value="treeCutting">1</option>
+    <option value="treePruning">2</option>
+    <option value="craneWorkRemoval">3</option>
+    <option value="landClearing">4</option>
+    <option value="debrisRecycling">5</option>
+    <option value="firewood">6</option>
+  </select>
+
+          </div>
+        
+        </div>
 
         <!-- <section class="featured-event" id="bottomslide">
 
@@ -145,3 +195,4 @@
 
 </body>
 </html>
+
