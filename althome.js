@@ -1,11 +1,17 @@
-// Add JavaScript functionality if needed, such as event listeners or AJAX calls
-// document.getElementById('newsletter-signup').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const email = event.target.querySelector('input[type="email"]').value;
-//     alert(`Thank you for subscribing with ${email}!`);
-//     // Here you can add functionality to handle the subscription
-// });
 
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+      items: 4,          // Number of items to display
+      loop: true,        // Loop the carousel
+      margin: 10,       // Margin between items
+      autoplay: true,    // Enable autoplay
+      autoplayTimeout: 5000, // Autoplay interval
+      nav: true,         // Show navigation arrows
+      dots: true,        // Show pagination dots
+      slideBy: 4         // Scroll 4 items at a time
+  });
+});
 
 
 
@@ -91,5 +97,7 @@ menuIcon.addEventListener('click', () => {
 closeIcon.addEventListener('click', () => {
     navLinks.classList.remove('active'); // Remove the active class to close the menu
 });
+
+
 
 
