@@ -8,12 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <title>Arborserv.com</title>
 </head>
 <body>
 
     <nav class="navbar">
-     
+        <!-- <i class="fa fa-envelope"></i>
+        <i class="fa fa-phone"></i> -->
         <div class="menu-icon" id="menu-icon">&#9776;</div>
         <ul class="nav-links" id="nav-links">
          
@@ -40,7 +55,8 @@
     </nav>
    
     <header> 
-        <h1>Arbor<span id="headline">serv</span></h1>
+        <h1>Arbor<span id="headline">serv</span></h1> <br>
+        <button id="myBtn">Book a Service</button>
     </header>
 
     <section class="featured-event" id="bottomslide">
@@ -51,6 +67,7 @@
         <div class="slideshow-container">
             <div class="mySlides fade" style="display: block;">
                 <img src="photo_2024-10-27 20.05.09.jpeg" alt="Slide 1">
+    
                 <div class="text-overlay">At Arborserv, we offer expert tree cutting and maintenance services to enhance
                      your property’s beauty and safety.
                      Our skilled team efficiently handles tree removal, trimming, and land clearing with
@@ -77,38 +94,91 @@
     </section>
 
     <main>
-        <section class="calendar">
-           
-                <h1>Welcome to Arborserv</h1>
-                <div class="box">
-                  <div class="container">
-                    
-                    <h2>Best tree clean up company in Georgia <a href="">Contact Us</a></h2> 
-                    
-                   
-                  </div>
-                </div>
-             
-        </section>
 
-        <section class="featured-event">
-            <h2></h2>
-            <div class="event-details">
-                <h3>Learn more</h3>
-                <p>Click here to learn more about the services we offer</p>
-                <p></p>
-                <div class="cta-buttons">
-                    <button onclick="location.href='event-details.html'">Learn more</button>
-                    <!-- <button onclick="location.href='purchase-tickets.html'">blank</button> -->
-                </div>
+        <h1>about us</h1>
+<section class="featured-event">
+    <p>At Arborserv, we are passionate about preserving the beauty and health
+         of your landscape. With years of experience in tree cutting and maintenance,
+          our skilled team is dedicated to providing safe, efficient, and reliable
+           services tailored to your needs. Whether it's tree removal, pruning, or
+            emergency storm damage response, we use the latest techniques and equipment
+             to ensure your property is protected and aesthetically pleasing. Our commitment to customer
+              satisfaction and environmental
+               responsibility drives us to deliver top-quality service with a personal touch. 
+        Trust us to keep your trees healthy and your property looking its best!</p>
+</section>
+
+
+
+      
+        <h1>Our Services</h1>
+
+<section class="featured-event">
+<h1>Tree Cutting</h1>
+        <div class="owl-carousel">
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 1"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.45.jpeg" alt="Image 2"></div>
+            <div class="item"><img src="photo_2024-10-27 20.05.02.jpeg" alt="Image 3"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.57.jpeg" alt="Image 4"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 5"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 6"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 7"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 8"></div>
+        </div>
+       
+    </section>
+
+    <section class="featured-event">
+    <h1>Tree Pruning</h1>
+        <div class="owl-carousel">
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 1"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 2"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 3"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 4"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 5"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 6"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 7"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 8"></div>
+        </div>
+       
+    </section>
+
+
+    <section class="featured-event">
+    <h1>Crane Work Removal</h1>
+        <div class="owl-carousel">
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 1"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 2"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 3"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 4"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 5"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 6"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 7"></div>
+            <div class="item"><img src="photo_2024-10-27 20.04.23.jpeg" alt="Image 8"></div>
+        </div>
+       
+    </section>
+    <h1>See More</h1>
+    <section class="featured-event">
+        <h2></h2>
+        <div class="event-details">
+            <h3>Learn more</h3>
+            <p>Click here to learn more about the services we offer</p>
+            <p></p>
+            <div class="cta-buttons">
+                <button onclick="location.href='event-details.html'">Learn more</button>
+                <!-- <button onclick="location.href='purchase-tickets.html'">blank</button> -->
             </div>
-        </section>
+        </div>
+    </section>
+
+  
 
 
         <h2>Modal Example</h2>
 
         <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Open Modal</button>
+        <button id="myBtn">Book a Service</button>
         
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -146,44 +216,27 @@
     <option value="landClearing">4</option>
     <option value="debrisRecycling">5</option>
     <option value="firewood">6</option>
-  </select>
+  </select> <br>
+  <p>payment method:</p> 
+  <button><i class="fa fa-paypal"></i> paypal</button>
+  <button>$ cashapp</button>
+  <button><i class="fa fa-credit-card"></i> card</button>
 
           </div>
         
         </div>
 
-        <!-- <section class="featured-event" id="bottomslide">
-
-        <div class="slideshow-container">
-            <div class="mySlides fade" style="display: block;">
-                <img src="photo_2024-10-27 20.04.23.jpeg" alt="Slide 1">
-                <div class="text-overlay">Upcoming Events</div>
-            </div>
-            <div class="mySlides fade" style="display: none;">
-                <img src="photo_2024-10-27 20.04.32.jpeg" alt="Slide 2">
-                <div class="text-overlay">Upcoming Events</div>
-            </div>
-            <div class="mySlides fade" style="display: none;">
-                <img src="photo_2024-10-27 20.05.06.jpeg" alt="Slide 3">
-                <div class="text-overlay">Upcoming Events</div>
-            </div>
-    
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-     
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </section> -->
-
-         
-
-    
       
-<!-- end card slideshow -->
+
+     
+         
+<!-- image gallery -->
+
+	
+
+
+
+<!-- end image gallery-->
     <footer>
         <p>&copy; 2024 Arborserv.org</p>
     </footer>
@@ -195,4 +248,3 @@
 
 </body>
 </html>
-
